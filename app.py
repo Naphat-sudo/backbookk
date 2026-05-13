@@ -32,12 +32,12 @@ if st.button("Submit"):
     url = "https://script.google.com/macros/s/AKfycbznNH_9me6H9GBb4jsuhN8EpVHG5JCVk3EHC-eeAInPI1mPxu5iDwLoUOOsEz8AdfFnHg/exec"
 
 
-response = requests.post(url, json=data)
+    response = requests.post(url, json=data)
 
-st.write("STATUS:", response.status_code)
-st.write("TEXT:", response.text)
+    st.write("STATUS:", response.status_code)
+    st.write("TEXT:", response.text)
 
-if response.text == "Success":
-    st.success("ส่งข้อมูลสำเร็จ!")
-else:
-    st.error("เกิดข้อผิดพลาด")
+    if response.text == "Success":
+        st.success("ส่งข้อมูลสำเร็จ!")
+    else:
+        st.error("เกิดข้อผิดพลาด")
