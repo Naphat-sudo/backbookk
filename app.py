@@ -29,7 +29,7 @@ if st.button("Submit"):
         "tel": tel
     }
 
-    url = "https://script.google.com/macros/s/AKfycbxkTh8p7xi9YoW_KQKL9NScV4LjEBBTV-kJmhd9nFkDAS06Zzn5d1P6Fvz4TZHEp3j-/exec"
+    url = "https://script.google.com/macros/s/AKfycbznNH_9me6H9GBb4jsuhN8EpVHG5JCVk3EHC-eeAInPI1mPxu5iDwLoUOOsEz8AdfFnHg/exec"
 
     response = requests.post(url, json=data)
 
